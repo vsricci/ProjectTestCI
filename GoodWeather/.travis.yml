@@ -4,5 +4,4 @@ xcode_workspace: GoodWeather.xcodeproj
 xcode_scheme: GoodWeather
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone SE
 before_install:
-  - cd ProjectTestCI
-  - cd GoodWeather
+ 
