@@ -4,11 +4,8 @@ xcode_project: GoodWeather.xcodeproj
 xcode_scheme: GoodWeather
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone SE
 before_install: 
-branches:
-  only:
-   - GoodWeatherByUnitTests
 deploy:
-  provider: Teste
+  provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
   local-dir: GoodWeather
