@@ -30,5 +30,12 @@ class GoodWeatherTests: XCTestCase {
             // Put the code you want to measure the time of here.
         }
     }
+    
+    func testLetsGo() {
+        let one = 5
+        let two = 10
+        let totol = one+two
+        XCTAssertEqual(totol, 15)
+    }
 
 }

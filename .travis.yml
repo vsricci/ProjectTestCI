@@ -4,13 +4,16 @@ xcode_project: GoodWeather.xcodeproj
 xcode_scheme: GoodWeather
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone SE
 before_install: 
+branches:
+  only:
+   - GoodWeatherByUnitTests
 deploy:
-  provider: pages
+  provider: Teste
   skip-cleanup: true
   github-token: $GH_TOKEN
   local-dir: GoodWeather
   on:
-    branch: master
+    branch: GoodWeatherByUnitTests
 env:
   matrix:
     secure: ZJiFBONCDi1O71ktRBJjAWTJu2+DjpkRXLrf+JYhGMUb3PBYR+n+l9jdJzreHrUkUAMArXz+Dn+hUcfIZ/nkUUOdHBmCl+3MltZ37z8Kn/h/yTDXLWEQGXSdvSmb7TUqCFw2KFZtoApqu2mrblFbfpYVzuFR4YSXt8PM6/+ha90lNFMJsUGZB7vktR1wZzRIRk655G+7h7GzYpU9GpqSxiTOEyrNNCRrwdJT79Rk99ndNAm6/AW0YyhocRMCuYnw5dUUnbaNIZ6kwLVM2Y4Nn8R3vngcAE+KfQzNE4FYC1vWswohbC3Pl8q4Uxt7zW5CMflejv1LolfRJdHAWXGkxyG6VPMfjBY9+xcSOkwKEDfZjxHXzP5g53hzNEzlPDJsVZQQSdApdA97YxgIACN25w070eaNkkZjplSTe4cKeq+7r3/zd0uKzDetGCNyMueweHURjRG4eOogTBarw6cxAGSPA4yrFWw/Mw2a8vVaf/EFRrIWic4dH4qtUGVT1lbyLsauMKMcSvMdJ5PgCTmofRWco4BG3aG7UaFk9PKX29AsAVdPTgBJDq2C018R/zWTT+VyleSkyfhDovbL/X/YJNTMXFgugP8DUy3kkPxDv6UyzR3TjXXLHCxRQHSLLoMdQRGvNv9K+eedzbI/etHMvA398qNryrtcVIT+TM2NGt4=
