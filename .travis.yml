@@ -5,3 +5,10 @@ xcode_scheme: GoodWeather
 xcode_destination: platform=iOS Simulator,OS=12.1,name=iPhone SE
 before_install:
   
+deploy:
+  provider: pages
+  skip-cleanup: true
+  github-tokrn: $GH_TOKEN
+  local-dir: docs
+  on: 
+    branch: master
