@@ -47,9 +47,7 @@
 \pard\pardeftab720\sl280\partightenfactor0
 \cf2 \
 before_install:\
-- cd viniciusricci\
-- cd Documents\
-- cd ProjectsSwifts\
-- cd SwiftProjects\
+
 - cd ProjectTestCI\
-- cd GoodWeather}
+- cd GoodWeather
+}
