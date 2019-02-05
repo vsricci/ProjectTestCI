@@ -7,7 +7,7 @@ before_install:
 deploy:
   provider: pages
   skip-cleanup: true
-  github-token: "$GH_TOKEN"
+  github-token: $GH_TOKEN
   local-dir: docs
   on:
     branch: master
