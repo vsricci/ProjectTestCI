@@ -7,7 +7,7 @@
 //
 
 import UIKit
-class WeatherListTableViewController:  {
+class WeatherListTableViewController: UITableViewController {
 
     var weather: [Temperature] = [Temperature]()
     var weatherListViewModel = WeatherListViewModel()
