@@ -28,7 +28,7 @@ class WeatherListViewModel {
         
         weatherViewModels =  weatherViewModels.map { vm in
             let weatherModel = vm
-            weatherModel.main.temperature?.value = ((weatherModel.main.temperature?.value ?? 0.0) - 32) * 5/9
+            weatherModel.main?.temperature?.value = ((weatherModel.main?.temperature?.value ?? 0.0) - 32) * 5/9
             return weatherModel
         }
     }
@@ -37,7 +37,7 @@ class WeatherListViewModel {
         
         weatherViewModels =  weatherViewModels.map { vm in
             let weatherModel = vm
-            weatherModel.main.temperature?.value = ((weatherModel.main.temperature?.value ?? 0.0) * 9/5) + 32
+            weatherModel.main?.temperature?.value = ((weatherModel.main?.temperature?.value ?? 0.0) * 9/5) + 32
             return weatherModel
         }
     }
@@ -80,19 +80,34 @@ class Dynamic<T>: Decodable where T: Decodable {
     
 }
 
-struct WeatherViewModel: Decodable {
-    let name: Dynamic<String>
-    let main: Weather
+class WeatherViewModel: Decodable {
+    var name: Dynamic<String>?
+    var main: Weather?
     
-    init(from decoder: Decoder) throws {
+    convenience init(name: Dynamic<String>?, main: Weather?) {
+        self.init()
+        self.name = name
+        self.main = main
+    }
+    
+    convenience required init(from decoder: Decoder) throws {
         
-        let container = try decoder.container(keyedBy: CodingKeys.self)
-        name = Dynamic(try container.decode(String.self, forKey: .name))
-        main = try container.decode(Weather.self, forKey: .main)
+        let container = try! decoder.container(keyedBy: CodingKeys.self)
+        let name = Dynamic(try container.decode(String.self, forKey: .name))
+        let  main = try container.decode(Weather.self, forKey: .main)
+        self.init(name: name, main: main)
     }
     
     private enum CodingKeys : String, CodingKey {
         case name
         case main = "main"
     }
+}
+
+extension WeatherViewModel: CustomStringConvertible {
+    var description: String {
+        return "\(name) \(main)"
+    }
+    
+    
 }

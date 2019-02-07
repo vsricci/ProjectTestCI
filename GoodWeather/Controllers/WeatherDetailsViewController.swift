@@ -32,10 +32,10 @@ class WeatherDetailsViewController: UIViewController {
     
     private func setupVMBindings() {
         if let weatherVM = self.weatherViewModel {
-            weatherVM.name.bind { self.cityNameLabel.text = $0 }
-            weatherVM.main.temperature?.bind { self.currentTemperatureLabel.text = $0.formatAsDegree }
-            weatherVM.main.temperatureMax?.bind { self.maxTempLabel.text = $0.formatAsDegree }
-            weatherVM.main.temperatureMin?.bind { self.minTempLabel.text = $0.formatAsDegree }
+            weatherVM.name?.bind { self.cityNameLabel.text = $0 }
+            weatherVM.main?.temperature?.bind { self.currentTemperatureLabel.text = $0.formatAsDegree }
+            weatherVM.main?.temperatureMax?.bind { self.maxTempLabel.text = $0.formatAsDegree }
+            weatherVM.main?.temperatureMin?.bind { self.minTempLabel.text = $0.formatAsDegree }
         }
         
         // change the value after few seconds
