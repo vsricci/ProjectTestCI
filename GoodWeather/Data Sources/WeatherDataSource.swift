@@ -35,8 +35,8 @@ class WeatherDataSource : NSObject, UITableViewDataSource {
         }
         
         let weatherViewModel = self.weatherListViewModel.modelAt(indexPath.row)
-        cell.cityNameLabel.text = weatherViewModel.name.value
-        cell.temperatureLabel.text = weatherViewModel.main.temperature?.value.formatAsDegree
+        cell.cityNameLabel.text = weatherViewModel.name?.value
+        cell.temperatureLabel.text = weatherViewModel.main?.temperature?.value.formatAsDegree
         
         return cell
     }
