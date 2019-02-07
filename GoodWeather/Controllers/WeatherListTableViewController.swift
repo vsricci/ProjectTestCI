@@ -10,20 +10,23 @@ import UIKit
 class WeatherListTableViewController: UITableViewController {
 
     var weather: [Temperature] = [Temperature]()
-    var weatherListViewModel = WeatherListViewModel()
+    var weatherListViewModel : WeatherListViewModel?
    // private var datasource: WeatherDataSource?
     private var datasource: TableViewDataSource<WeatherCell, WeatherViewModel>!
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.weatherListViewModel = WeatherListViewModel()
+        self.weatherListViewModel?.addWeatherViewModel(vm:  WeatherViewModel(name: Dynamic<String>("São Paulo"), main: Weather(temperature:  Dynamic<Double>(100.0), temperatureMin:  Dynamic<Double>(69.0), temperatureMax:  Dynamic<Double>(45.7))))
         tableView.rowHeight = 100
         tableView.estimatedRowHeight = UITableView.automaticDimension
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        
+        self.title = "GoodWather"
+        self.navigationController?.navigationItem.title = "GoodWeather"
         //self.datasource = WeatherDataSource(self.weatherListViewModel)
-        self.datasource = TableViewDataSource(cellIdentifier: "WeatherCell", items: self.weatherListViewModel.weatherViewModels, configureCell: { cell, viewModel in
-            
+        self.tableView.register(WeatherCell.self, forCellReuseIdentifier: "WeatherCell")
+        self.datasource = TableViewDataSource(cellIdentifier: "WeatherCell", items: (self.weatherListViewModel?.weatherViewModels)!, configureCell: { cell, viewModel in
+
                 cell.configure(vm: viewModel)
         })
         self.tableView.dataSource = self.datasource
@@ -73,7 +76,7 @@ class WeatherListTableViewController: UITableViewController {
             return
         }
         
-        let weatherVM = self.weatherListViewModel.modelAt(indexPath.row)
+        let weatherVM = self.weatherListViewModel?.modelAt(indexPath.row)
         weatherDetailsVC.weatherViewModel = weatherVM
     }
 }
@@ -82,7 +85,7 @@ extension WeatherListTableViewController: AddWeatherDelegate {
    
     func addWeatherDidSave(vm: WeatherViewModel) {
         self.datasource.updateItems([vm])
-        self.weatherListViewModel.addWeatherViewModel(vm: vm)
+        self.weatherListViewModel?.addWeatherViewModel(vm: vm)
         self.tableView.reloadData()
     }
 }
@@ -90,9 +93,17 @@ extension WeatherListTableViewController: AddWeatherDelegate {
 extension WeatherListTableViewController: SettingsDelegate {
     func settingsDone(vm: SettingsViewModel) {
         print("selected delegate...")
-        self.weatherListViewModel.updateUnit(to: vm.selectedUnit)
+        self.weatherListViewModel?.updateUnit(to: vm.selectedUnit)
         self.tableView.reloadData()
     }
     
     
+}
+
+extension WeatherListTableViewController {
+   
+   override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        self.weatherListViewModel?.weatherCoordinatorDelegate?.next()
+    }
 }

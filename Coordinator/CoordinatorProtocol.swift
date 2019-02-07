@@ -8,9 +8,20 @@
 
 import Foundation
 
-protocol CoordinatorProtocol {
- 
+
+protocol CoordinatorProtocol: AnyObject, NSObjectProtocol {
+    
+    
+    var parent: CoordinatorProtocol? { get set }
+    var identifier: String { get }
     func start()
     func stop()
     var childCoordinators : [String: CoordinatorProtocol] { get }
+}
+
+extension CoordinatorProtocol {
+    var identifier : String {
+        return "\(String(describing: type(of: self)))- \(self.hash))"
+    }
+    
 }

@@ -7,10 +7,21 @@
 //
 
 import Foundation
+import UIKit
+
+protocol WeatherListViewModelCoordinateDelegate {
+    func next()
+    
+}
+
 
 class WeatherListViewModel {
     
     private(set) var weatherViewModels = [WeatherViewModel]()
+    
+    var weatherCoordinatorDelegate : WeatherListViewModelCoordinateDelegate? = nil
+    
+    
     
     func addWeatherViewModel(vm: WeatherViewModel) {
         weatherViewModels.append(vm)
@@ -107,6 +118,17 @@ class WeatherViewModel: Decodable {
 extension WeatherViewModel: CustomStringConvertible {
     var description: String {
         return "\(name) \(main)"
+    }
+}
+
+extension WeatherListViewModel: WatherListCoordinateDelegate, WeatherListViewModelCoordinateDelegate {
+    func next() {
+        print("fgfgfdgdfdfgf")
+    }
+    
+    func test() {
+        print("teste")
+        weatherCoordinatorDelegate?.next()
     }
     
     

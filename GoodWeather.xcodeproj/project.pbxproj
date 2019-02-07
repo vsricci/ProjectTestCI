@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		184AAA74220C6BB300E98A54 /* NavigationCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AAA73220C6BB300E98A54 /* NavigationCoordinator.swift */; };
+		184AAA76220C9EDF00E98A54 /* UIViewController+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AAA75220C9EDF00E98A54 /* UIViewController+Extensions.swift */; };
+		184AAA78220CC9A900E98A54 /* ViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AAA77220CC9A900E98A54 /* ViewCoordinator.swift */; };
+		184AAA7A220CC9EC00E98A54 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184AAA79220CC9EC00E98A54 /* ViewController.swift */; };
 		18A85917220274210033CF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A85916220274210033CF39 /* AppDelegate.swift */; };
 		18A8591C220274210033CF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18A8591A220274210033CF39 /* Main.storyboard */; };
 		18A8591E220274220033CF39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18A8591D220274220033CF39 /* Assets.xcassets */; };
@@ -63,6 +67,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		184AAA73220C6BB300E98A54 /* NavigationCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationCoordinator.swift; sourceTree = "<group>"; };
+		184AAA75220C9EDF00E98A54 /* UIViewController+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extensions.swift"; sourceTree = "<group>"; };
+		184AAA77220CC9A900E98A54 /* ViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCoordinator.swift; sourceTree = "<group>"; };
+		184AAA79220CC9EC00E98A54 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		18A85913220274210033CF39 /* GoodWeather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoodWeather.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18A85916220274210033CF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18A8591B220274210033CF39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -203,6 +211,7 @@
 				18A85947220276E30033CF39 /* AddWeatherCityViewController.swift */,
 				18A8596322037EF40033CF39 /* SettingsTableViewController.swift */,
 				18A8596C2207A2460033CF39 /* WeatherDetailsViewController.swift */,
+				184AAA79220CC9EC00E98A54 /* ViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -344,6 +353,9 @@
 				18B3465C220BBFF700D6ABF6 /* CoordinatorProtocol.swift */,
 				18B3465E220BC04D00D6ABF6 /* AppCoordinator.swift */,
 				18B34663220BC3BF00D6ABF6 /* Coordinator.swift */,
+				184AAA73220C6BB300E98A54 /* NavigationCoordinator.swift */,
+				184AAA75220C9EDF00E98A54 /* UIViewController+Extensions.swift */,
+				184AAA77220CC9A900E98A54 /* ViewCoordinator.swift */,
 			);
 			path = Coordinator;
 			sourceTree = "<group>";
@@ -492,6 +504,7 @@
 				18B34657220B5FF500D6ABF6 /* ArticleListViewModel.swift in Sources */,
 				18A85960220379440033CF39 /* Double+Extensions.swift in Sources */,
 				18A8596422037EF40033CF39 /* SettingsTableViewController.swift in Sources */,
+				184AAA76220C9EDF00E98A54 /* UIViewController+Extensions.swift in Sources */,
 				18A85957220348410033CF39 /* Weather.swift in Sources */,
 				18A8594B22027C8B0033CF39 /* WeatherCell.swift in Sources */,
 				18B3465F220BC04D00D6ABF6 /* AppCoordinator.swift in Sources */,
@@ -502,6 +515,8 @@
 				18A8596822079C760033CF39 /* AddCityViewModel.swift in Sources */,
 				18B3465A220B620900D6ABF6 /* ArticleTableViewCell.swift in Sources */,
 				18B3464F220B3C9C00D6ABF6 /* GoodNewsWebservice.swift in Sources */,
+				184AAA7A220CC9EC00E98A54 /* ViewController.swift in Sources */,
+				184AAA78220CC9A900E98A54 /* ViewCoordinator.swift in Sources */,
 				18A85946220276B30033CF39 /* WeatherListTableViewController.swift in Sources */,
 				18A85948220276E30033CF39 /* AddWeatherCityViewController.swift in Sources */,
 				18A8595B220360090033CF39 /* TemperatureViewModel.swift in Sources */,
@@ -516,6 +531,7 @@
 				18A85917220274210033CF39 /* AppDelegate.swift in Sources */,
 				18A85972220909410033CF39 /* TableViewDataSource.swift in Sources */,
 				18A8596622077A390033CF39 /* SettingsViewModel.swift in Sources */,
+				184AAA74220C6BB300E98A54 /* NavigationCoordinator.swift in Sources */,
 				18B34655220B5F2400D6ABF6 /* ArticleViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -693,7 +709,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 889286V7CX;
+				DEVELOPMENT_TEAM = LQVQ6Y77KQ;
 				INFOPLIST_FILE = GoodWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -711,7 +727,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 889286V7CX;
+				DEVELOPMENT_TEAM = LQVQ6Y77KQ;
 				INFOPLIST_FILE = GoodWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
