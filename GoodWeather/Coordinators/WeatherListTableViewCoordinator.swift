@@ -9,15 +9,32 @@
 import Foundation
 import UIKit
 
-class WeatherListTableViewCoordinator : Coordinator {
-    
-    var navController : UINavigationController?
-   
-    override func start() {
-        
-            let weatherListTableViewController = WeatherListTableViewController()
-            let navController = UINavigationController(rootViewController: weatherListTableViewController)
-            self.navController = navController
-    }
+
+protocol WatherListCoordinateDelegate {
+    func test()
 }
 
+
+class WeatherListTableViewCoordinator : Coordinator {
+
+    weak var navigationController: UINavigationController?
+    
+    lazy var weatherListViewModel : WeatherListViewModel? = {
+        let vm = WeatherListViewModel()
+        vm.weatherCoordinatorDelegate = self
+        return vm
+    }()
+
+    override func start() {
+        
+    }
+}
+extension WeatherListTableViewCoordinator: WeatherListViewModelCoordinateDelegate {
+    func next() {
+        print("fghdghghfg")
+    }
+    
+    
+    
+    
+}
