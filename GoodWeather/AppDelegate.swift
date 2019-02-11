@@ -12,8 +12,15 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-    private var appCoordinator : AppCoordinator?
+    
+    var rootViewController: UINavigationController {
+        return self.window!.rootViewController as! UINavigationController
+        
+    }
 
+    private lazy var appCoordinator : Coordinator = self.makeCoordinator()
+    
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
@@ -24,12 +31,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         setupDefaultsSettings()
         
-        let window = UIWindow(frame: UIScreen.main.bounds)
-        let appCoordinator = AppCoordinator(window: window)
-        self.window = window
-        self.appCoordinator = appCoordinator
         appCoordinator.start()
+       
         return true
+    }
+    
+    
+    
+    func makeCoordinator() -> Coordinator {
+        return AppCoordinator(router: AppRouter(rootController: self.rootViewController), coordinatorFactory: AppCordinatorFactory())
     }
     
     private func setupDefaultsSettings() {

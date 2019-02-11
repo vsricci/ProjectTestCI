@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="n5P-FX-b9f">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -10,10 +10,23 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="pwQ-yz-kJ1">
+            <objects>
+                <navigationController storyboardIdentifier="UINavigationController" id="n5P-FX-b9f" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R51-JQ-anL">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nNf-6b-BBu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2156" y="236"/>
+        </scene>
+        <!--Sign Up View Controller-->
         <scene sceneID="f4H-d4-DBX">
             <objects>
-                <viewController id="iyd-bM-R04" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SignUpViewController" id="iyd-bM-R04" customClass="SignUpViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="si8-RM-30c">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -28,7 +41,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E9y-48-C8D">
-                                <rect key="frame" x="16" y="200" width="343" height="60"/>
+                                <rect key="frame" x="16" y="196.5" width="343" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="983-Uj-uMO"/>
                                 </constraints>
@@ -45,13 +58,22 @@
                                 <state key="normal" title="Acessar">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="signUpComplete:" destination="iyd-bM-R04" eventType="touchUpInside" id="cyP-6X-47w"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E7N-MD-LbX">
-                                <rect key="frame" x="135.5" y="282" width="104" height="32"/>
+                                <rect key="frame" x="135.5" y="278.5" width="104" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="o3J-Xm-Th1"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
                                 <state key="normal" title="Cadastre - se">
                                     <color key="titleColor" red="0.93725490570000003" green="0.93725490570000003" blue="0.95686274770000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="showRegisterView:" destination="iyd-bM-R04" eventType="touchUpInside" id="dzW-wx-fQj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOH-cq-1Mz">
                                 <rect key="frame" x="111" y="388.5" width="153" height="32"/>
@@ -63,31 +85,32 @@
                         </subviews>
                         <color key="backgroundColor" red="0.20000000000000001" green="0.57647058819999997" blue="0.98823529409999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="kuv-7B-qaT" firstAttribute="centerY" secondItem="xhp-su-tDk" secondAttribute="centerY" id="3Na-QB-XoX"/>
                             <constraint firstItem="kOH-cq-1Mz" firstAttribute="centerX" secondItem="xhp-su-tDk" secondAttribute="centerX" id="D2l-xX-rOj"/>
                             <constraint firstItem="xhp-su-tDk" firstAttribute="trailing" secondItem="1Mn-ys-OPD" secondAttribute="trailing" constant="16" id="FWm-51-uj1"/>
                             <constraint firstItem="1Mn-ys-OPD" firstAttribute="leading" secondItem="xhp-su-tDk" secondAttribute="leading" constant="16" id="UyG-gY-D1U"/>
-                            <constraint firstItem="E7N-MD-LbX" firstAttribute="top" secondItem="E9y-48-C8D" secondAttribute="bottom" constant="22" id="WCK-Ai-YCF"/>
                             <constraint firstItem="kOH-cq-1Mz" firstAttribute="top" secondItem="kuv-7B-qaT" secondAttribute="bottom" constant="20" id="cpW-Kj-tjh"/>
                             <constraint firstItem="E9y-48-C8D" firstAttribute="leading" secondItem="xhp-su-tDk" secondAttribute="leading" constant="16" id="h6b-rq-miG"/>
+                            <constraint firstItem="E7N-MD-LbX" firstAttribute="top" secondItem="E9y-48-C8D" secondAttribute="bottom" constant="22" id="ieY-c1-pHB"/>
                             <constraint firstItem="E7N-MD-LbX" firstAttribute="centerX" secondItem="xhp-su-tDk" secondAttribute="centerX" id="kb7-rA-ASp"/>
                             <constraint firstItem="xhp-su-tDk" firstAttribute="trailing" secondItem="E9y-48-C8D" secondAttribute="trailing" constant="16" id="lQW-uZ-o7G"/>
                             <constraint firstItem="xhp-su-tDk" firstAttribute="trailing" secondItem="kuv-7B-qaT" secondAttribute="trailing" constant="24" id="n1n-w4-GqO"/>
+                            <constraint firstItem="E9y-48-C8D" firstAttribute="top" secondItem="1Mn-ys-OPD" secondAttribute="bottom" constant="56.5" id="ngM-Xp-uhH"/>
+                            <constraint firstItem="kuv-7B-qaT" firstAttribute="top" secondItem="E7N-MD-LbX" secondAttribute="bottom" constant="8" id="rcV-QK-fMH"/>
                             <constraint firstItem="kuv-7B-qaT" firstAttribute="leading" secondItem="xhp-su-tDk" secondAttribute="leading" constant="24" id="sND-WO-3QE"/>
-                            <constraint firstItem="kuv-7B-qaT" firstAttribute="centerX" secondItem="xhp-su-tDk" secondAttribute="centerX" id="sRv-j7-hiZ"/>
-                            <constraint firstItem="E9y-48-C8D" firstAttribute="top" secondItem="1Mn-ys-OPD" secondAttribute="bottom" constant="60" id="tr3-GC-8VS"/>
                             <constraint firstItem="1Mn-ys-OPD" firstAttribute="top" secondItem="xhp-su-tDk" secondAttribute="top" constant="60" id="vfM-Ri-Jvd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="xhp-su-tDk"/>
                     </view>
+                    <navigationItem key="navigationItem" id="MWY-LM-V6B"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="34j-LU-Vv8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="142"/>
+            <point key="canvasLocation" x="-940" y="72"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="ySV-ae-gTX">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xoa-ek-Wto" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="nD7-95-MAT" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="s5D-MY-pBq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -148,14 +171,13 @@
                         <viewLayoutGuide key="safeArea" id="uFZ-JU-NJo"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xoa-ek-Wto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="826"/>
+            <point key="canvasLocation" x="-940" y="836"/>
         </scene>
-        <!--View Controller-->
+        <!--Register View Controller-->
         <scene sceneID="Ppy-nF-9BO">
             <objects>
-                <viewController id="MO6-VQ-pBs" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="RegisterViewController" id="MO6-VQ-pBs" customClass="RegisterViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Waa-wT-IXz">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

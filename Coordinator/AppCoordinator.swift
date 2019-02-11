@@ -11,25 +11,39 @@ import UIKit
 
 class AppCoordinator: Coordinator {
     
-    //private var navigationCoordinator: NavigationCoordinator?
-    private var window : UIWindow
+    
+    private let router: Router
+    private let coordinatorFactory: CoordinatorFactory
 
-    init(window: UIWindow) {
-        self.window = window
+    init(router: Router, coordinatorFactory: CoordinatorFactory) {
+        self.router = router
+        self.coordinatorFactory = coordinatorFactory
     }
     
     override func start() {
     
-        let userDefaults = UserDefaults.standard
-        if let user = userDefaults.value(forKey: "unit") as? String {
-            print(user)
-          //  self.navigationCoordinator = setupNavigationCoordinatorWithWather()
-            //self.navigationCoordinator = setupNavigationCoordinatorWithGoodNews()
-        }
-        else {
-           // self.navigationCoordinator = setupNavigationCoordinatorWithGoodNews()
-        }
+//        let userDefaults = UserDefaults.standard
+//        if let user = userDefaults.value(forKey: "unit") as? String {
+//            print(user)
+//          //  self.navigationCoordinator = setupNavigationCoordinatorWithWather()
+//            //self.navigationCoordinator = setupNavigationCoordinatorWithGoodNews()
+//        }
+//        else {
+//           // self.navigationCoordinator = setupNavigationCoordinatorWithGoodNews()
+//        }
+        //runRootNavigation()
+        runAuthFlow()
         
+    }
+    
+    private func runAuthFlow() {
+        var coordinator = coordinatorFactory.makeAuthCoordinator(router: router)
+        coordinator.isFinished = { [ weak self, weak coordinator] in
+            self?.start()
+            self?.removeDependency(coordinator)
+        }
+        addDependency(coordinator)
+        coordinator.start()
     }
     
    

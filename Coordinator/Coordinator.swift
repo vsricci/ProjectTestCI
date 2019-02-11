@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class Coordinator: NSObject, CoordinatorProtocol {
+class Coordinator: CoordinatorProtocol {
     
     func start() {
-        start()
+        //start()
     }
 
     var childCoordinators: [Coordinator] = []

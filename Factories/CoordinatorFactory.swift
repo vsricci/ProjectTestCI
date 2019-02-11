@@ -10,11 +10,9 @@ import UIKit
 
 protocol CoordinatorFactory {
     
-    func makeTabBarCoordinator (_ coordinator: Coordinator, toPresent: Presentable?)
+    func makeTabBarCoordinator() -> (coordinator: Coordinator, toPresent: Presentable?)
     
-    func makeNavigationCoordinator(_ coordinator: Coordinator, toPresent: Presentable?)
     
-    func makeAuthCoordinator(router: Router?) -> Coordinator & AuthCoordinatorOutput
+    func makeAuthCoordinator(router: Router) -> Coordinator & AuthCoordinatorOutput
     
-    func makeRegisterNavigationCoordinator(router: Router?) -> UINavigationController?
 }
