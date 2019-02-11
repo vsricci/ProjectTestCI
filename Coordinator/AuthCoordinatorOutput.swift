@@ -9,5 +9,5 @@
 import Foundation
 
 protocol AuthCoordinatorOutput {
-    var isFinished: (() -> ) {get set}
+    var isFinished: (() -> Void) {get set}
 }
