@@ -29,7 +29,7 @@ class WeatherListViewModelTests: XCTestCase {
 //        for (index, vm) in (self.weatherListViewModel?.weatherViewModels.enumerated())! {
 //            XCTAssertEqual(round(vm.main?.temperature?.value ?? 0.0), round(celsiusTemperature[index]))
 //        }
-    }
+//    }
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
