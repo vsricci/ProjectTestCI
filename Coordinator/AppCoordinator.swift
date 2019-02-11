@@ -16,7 +16,6 @@ class AppCoordinator: Coordinator {
 
     init(window: UIWindow) {
         self.window = window
-        super.init(presenter: nil)
     }
     
     override func start() {

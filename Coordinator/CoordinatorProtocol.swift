@@ -10,13 +10,10 @@ import Foundation
 
 
 protocol CoordinatorProtocol: AnyObject, NSObjectProtocol {
-    
-    
-    var parent: CoordinatorProtocol? { get set }
-    var identifier: String { get }
     func start()
-    func stop()
-    var childCoordinators : [String: CoordinatorProtocol] { get }
+    //func stop()
+   // func startChild(_ coordinator : @escaping (CoordinatorProtocol?) -> ())
+   // func stopChild(_ coordinator : @escaping (CoordinatorProtocol?) -> ())
 }
 
 extension CoordinatorProtocol {
