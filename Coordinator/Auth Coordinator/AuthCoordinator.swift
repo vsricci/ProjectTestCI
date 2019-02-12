@@ -44,7 +44,11 @@ class AuthCoordinator : Coordinator, AuthCoordinatorOutput {
         register?.onRegisterComplete = { [weak self] in
             self?.isFinished?()
         }
-        router.push(register)
+        register?.popUpSuccess = { [weak self] viewController in
+           // self?.isFinished?()
+            self?.router.present(viewController, animated: true)
+        }
+        
+        self.router.push(self.register)
     }
-    
 }

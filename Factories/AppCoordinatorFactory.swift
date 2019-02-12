@@ -9,7 +9,23 @@
 import UIKit
 
 class AppCordinatorFactory : CoordinatorFactory {
+    func makeWeatherCoordinator(navigationController: UINavigationController?) -> Coordinator {
+        let coordinator = WaetherCoordinator(router: router(navigationController), factory: AppModuleFactory())
+        return coordinator
+    }
     
+    func makeWeatherCoordinator() -> Coordinator {
+        return makeWeatherCoordinator(navigationController: nil)
+    }
+    
+    func makeNewsCoordinator(navigationController: UINavigationController?) -> Coordinator {
+        let coordinator = WaetherCoordinator(router: router(navigationController), factory: AppModuleFactory())
+        return coordinator
+    }
+    
+    func makeNewsCoordinator() -> Coordinator {
+        return makeNewsCoordinator(navigationController: nil)
+    }
     
     func makeTabBarCoordinator() -> (coordinator: Coordinator, toPresent: Presentable?) {
         let controller = TabbarController.controllerFromStoryboard(.main)

@@ -6,7 +6,7 @@
 //  Copyright © 2019 Vinicius Ricci. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 class TabbarCoordinator: Coordinator {
     
@@ -20,5 +20,17 @@ class TabbarCoordinator: Coordinator {
     
     override func start() {
     
+        tabbarView.onViewDidLoad = runWatherFlow()
+        tabbarView.onTemperatureFlowSelect = runWatherFlow()
+    }
+    
+    private func runWatherFlow() -> ((UINavigationController) -> ()){
+        return { [unowned self] navigationController in
+            if navigationController.viewControllers.isEmpty == true {
+                let weatherCoordinator = self.coordinatorFactory.makeWeatherCoordinator(navigationController: navigationController)
+                self.addDependency(weatherCoordinator)
+                weatherCoordinator.start()
+            }
+        }
     }
 }

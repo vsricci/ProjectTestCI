@@ -6,8 +6,10 @@
 //  Copyright © 2019 Vinicius Ricci. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol RegisterView: BaseView {
      var onRegisterComplete: (() -> Void)? { get set }
+     var popUpSuccess: ((UIViewController) -> Void)? { get set }
+    
 }
