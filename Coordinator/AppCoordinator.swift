@@ -54,6 +54,14 @@ class AppCoordinator: Coordinator {
         coordinator.start()
     }
     
+//    func showItemSelected() {
+//        var coordinator = coordinatorFactory.makeNewsCoordinator()
+//        addDependency(coordinator)
+//        router.present()
+//        coordinator.start()
+//    }
+    
+    
     
    
 //    func setupNavigationCoordinatorWithWather()  -> NavigationCoordinator {

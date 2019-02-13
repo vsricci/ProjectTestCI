@@ -11,7 +11,7 @@ import Foundation
 class ArticleList: Decodable {
     var articles: [Article]?
     
-    convenience init(articles: [Article]) {
+    convenience init(articles: [Article]?) {
         self.init()
         self.articles = articles
     }
@@ -32,7 +32,7 @@ class Article: Decodable {
     var title: String?
     var description: String?
     
-    convenience init(title: String, description: String) {
+    convenience init(title: String?, description: String?) {
         self.init()
         self.title = title
         self.description = description

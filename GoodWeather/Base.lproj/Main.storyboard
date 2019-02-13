@@ -136,11 +136,11 @@
             </objects>
             <point key="canvasLocation" x="-1202" y="563"/>
         </scene>
-        <!--Item-->
+        <!--GoodWeather-->
         <scene sceneID="uvZ-47-uEa">
             <objects>
                 <navigationController id="6ko-fO-UFB" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="ZIB-Dx-DJk"/>
+                    <tabBarItem key="tabBarItem" title="GoodWeather" id="ZIB-Dx-DJk"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="d6q-3u-lAR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -150,11 +150,11 @@
             </objects>
             <point key="canvasLocation" x="-218" y="385"/>
         </scene>
-        <!--Item-->
+        <!--GoodNews-->
         <scene sceneID="jAE-Vp-2hv">
             <objects>
                 <navigationController id="Xr2-2x-Wz5" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="sbN-Z2-lq5"/>
+                    <tabBarItem key="tabBarItem" title="GoodNews" id="sbN-Z2-lq5"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f0Z-PO-Cao">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

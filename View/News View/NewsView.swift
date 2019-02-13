@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NewsView: BaseView {
-    
+    var onItemSelected : (() -> Void)? { get set }
 }

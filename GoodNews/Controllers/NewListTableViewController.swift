@@ -9,6 +9,8 @@
 import UIKit
 
 class NewListTableViewController: UITableViewController, NewsView {
+    var onItemSelected: (() -> Void)?
+    
 
     private var articleListViewModel: ArticleListViewModel!
     override func viewDidLoad() {
@@ -16,22 +18,23 @@ class NewListTableViewController: UITableViewController, NewsView {
 
         setup()
         getArticles()
-        self.title = "GoodNews"
-        self.navigationController?.navigationItem.title = "GoodNews"
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        
         
     }
     
     private func setup(){
 
-        //tableView.rowHeight = 80.0
-        //tableView.estimatedRowHeight = UITableView.automaticDimension
-        
         self.navigationController?.navigationBar.prefersLargeTitles = true
-//        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 47/255, green: 54/255, blue: 64/255, alpha: 1.0)
-//        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-//        
-//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        
+        self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 47/255, green: 54/255, blue: 64/255, alpha: 1.0)
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.tabBarItem.title = "GoodNews"
+        self.navigationController?.navigationItem.title = "GoodNews"
     }
 
     private func getArticles() {
@@ -69,6 +72,11 @@ class NewListTableViewController: UITableViewController, NewsView {
         cell.titleLabel.text = article.title
         cell.descriptionLabel.text = article.description
         return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        onItemSelected?()
     }
 
 }

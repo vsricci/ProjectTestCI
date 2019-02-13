@@ -35,7 +35,7 @@ extension TabbarController: UITabBarControllerDelegate {
             print("controller one")
             onTemperatureFlowSelect?(controller)
         }
-        if selectedIndex == 1 {
+        else if selectedIndex == 1 {
             print("controller two")
             onNewsFlowSelect?(controller)
         }
