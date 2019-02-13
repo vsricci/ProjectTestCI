@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoodWeather/Controllers/AddWeatherCityViewController.swift"
-            timestampString = "571018658.578439"
+            timestampString = "571695958.631084"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "53"
@@ -90,7 +90,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoodWeather/Controllers/AddWeatherCityViewController.swift"
-            timestampString = "571018658.5785379"
+            timestampString = "571695958.631295"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "54"
@@ -106,7 +106,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoodWeather/Controllers/AddWeatherCityViewController.swift"
-            timestampString = "571018658.57863"
+            timestampString = "571695958.631371"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "55"
@@ -170,7 +170,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoodWeather/Controllers/AddWeatherCityViewController.swift"
-            timestampString = "571018658.5789829"
+            timestampString = "571695958.631677"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
@@ -186,7 +186,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Coordinator/AppCoordinator.swift"
-            timestampString = "571609824.433408"
+            timestampString = "571719732.375507"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -202,7 +202,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Coordinator/AppCoordinator.swift"
-            timestampString = "571609824.433587"
+            timestampString = "571719732.3755881"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "36"
@@ -225,22 +225,6 @@
             endingLineNumber = "15"
             landmarkName = "CoordinatorProtocol"
             landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "GoodWeather/AppDelegate.swift"
-            timestampString = "571609824.433766"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "34"
-            endingLineNumber = "34"
-            landmarkName = "application(_:didFinishLaunchingWithOptions:)"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -273,6 +257,262 @@
             endingLineNumber = "22"
             landmarkName = "viewDidLoad()"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controllers/RegisterViewController.swift"
+            timestampString = "571719732.375857"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "62"
+            endingLineNumber = "62"
+            landmarkName = "savaRegister()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controllers/RegisterViewController.swift"
+            timestampString = "571719732.37631"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
+            landmarkName = "savaRegister()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/Auth Coordinator/AuthCoordinator.swift"
+            timestampString = "571719732.376647"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "42"
+            endingLineNumber = "42"
+            landmarkName = "showRegister()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/Auth Coordinator/AuthCoordinator.swift"
+            timestampString = "571719732.376712"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "44"
+            endingLineNumber = "44"
+            landmarkName = "showRegister()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoodWeather.AuthCoordinator.showRegister() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.97245"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "269">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GoodWeather.AuthCoordinator.showRegister() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.974138"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "44"
+                  endingLineNumber = "44"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/Auth Coordinator/AuthCoordinator.swift"
+            timestampString = "571719732.376778"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
+            landmarkName = "showRegister()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoodWeather.AuthCoordinator.showRegister() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.978689"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "691">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 (__C.UIViewController) -&gt; () in GoodWeather.AuthCoordinator.showRegister() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.980834"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "46">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/Auth Coordinator/AuthCoordinator.swift"
+            timestampString = "571719732.376845"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "showSignUp()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/Auth Coordinator/AuthCoordinator.swift"
+            timestampString = "571719732.3769079"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "showSignUp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoodWeather.AuthCoordinator.showSignUp() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.990211"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "91">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 () -&gt; () in GoodWeather.AuthCoordinator.showSignUp() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.991832"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "33"
+                  endingLineNumber = "33"
+                  offsetFromSymbolStart = "36">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Coordinator/Auth Coordinator/AuthCoordinator.swift"
+            timestampString = "571719732.376971"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "36"
+            endingLineNumber = "36"
+            landmarkName = "showSignUp()"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "GoodWeather.AuthCoordinator.showSignUp() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.996582"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "36"
+                  endingLineNumber = "36"
+                  offsetFromSymbolStart = "316">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #2 () -&gt; () in GoodWeather.AuthCoordinator.showSignUp() -&gt; ()"
+                  moduleName = "GoodWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/viniciusricci/Documents/ProjectsSwifts/SwiftProjects/ProjectTestCI/Coordinator/Auth%20Coordinator/AuthCoordinator.swift"
+                  timestampString = "571713738.998865"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "37"
+                  endingLineNumber = "37"
+                  offsetFromSymbolStart = "19">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

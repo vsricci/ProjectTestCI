@@ -8,7 +8,15 @@
 
 import Foundation
 
-class AppModuleFactory : AuthModuleFactory{
+class AppModuleFactory : AuthModuleFactory, WeatherModuleFactory, NewsModuleFactory{
+    func makeNews() -> NewsView {
+        return NewListTableViewController.controllerFromStoryboard(.newList)
+    }
+    
+    func makeWeather() -> WeatherView {
+        return WeatherListTableViewController.controllerFromStoryboard(.main)
+    }
+    
     func makeSignUp() -> SignUpView {
         return SignUpViewController.controllerFromStoryboard(.auth)
     }

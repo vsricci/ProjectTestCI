@@ -11,4 +11,5 @@ import Foundation
 protocol AuthModuleFactory {
     func makeSignUp() -> SignUpView
     func makeRegister() -> RegisterView
+    
 }

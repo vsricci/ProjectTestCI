@@ -41,10 +41,19 @@ class AppCoordinator: Coordinator {
         coordinator.isFinished = { [ weak self, weak coordinator] in
             self?.start()
             self?.removeDependency(coordinator)
+            self?.runTabBarFlow()
         }
         addDependency(coordinator)
         coordinator.start()
     }
+    
+    private func runTabBarFlow() {
+        let (coordinator, module) = coordinatorFactory.makeTabBarCoordinator()
+        addDependency(coordinator)
+        router.setRootModule(module, hideBar: true)
+        coordinator.start()
+    }
+    
     
    
 //    func setupNavigationCoordinatorWithWather()  -> NavigationCoordinator {

@@ -6,8 +6,11 @@
 //  Copyright © 2019 Vinicius Ricci. All rights reserved.
 //
 
-import Foundation
+import UIKit
 
 protocol TabbarView: class  {
 
+    var onNewsFlowSelect : ((UINavigationController) -> ())? { get set }
+    var onTemperatureFlowSelect : ((UINavigationController) -> ())? { get set }
+    var onViewDidLoad: ((UINavigationController) -> ())? { get set }
 }

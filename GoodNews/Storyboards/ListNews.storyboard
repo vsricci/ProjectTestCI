@@ -12,7 +12,7 @@
         <!--GoodNews-->
         <scene sceneID="NyD-N4-aGu">
             <objects>
-                <tableViewController id="APf-hg-9v8" customClass="NewListTableViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController storyboardIdentifier="NewListTableViewController" id="APf-hg-9v8" customClass="NewListTableViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="xeh-1E-dqe">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -77,9 +77,6 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="APf-hg-9v8" kind="relationship" relationship="rootViewController" id="TiM-6g-wT3"/>
-                    </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f4t-HK-ges" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

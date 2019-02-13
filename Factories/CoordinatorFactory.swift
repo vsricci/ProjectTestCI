@@ -15,4 +15,10 @@ protocol CoordinatorFactory {
     
     func makeAuthCoordinator(router: Router) -> Coordinator & AuthCoordinatorOutput
     
+    func makeWeatherCoordinator(navigationController: UINavigationController?) -> Coordinator
+    func makeWeatherCoordinator() -> Coordinator
+    
+    func makeNewsCoordinator(navigationController: UINavigationController?) -> Coordinator
+    func makeNewsCoordinator() -> Coordinator
+    
 }
