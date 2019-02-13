@@ -77,6 +77,12 @@
 		18B3465F220BC04D00D6ABF6 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B3465E220BC04D00D6ABF6 /* AppCoordinator.swift */; };
 		18B34662220BC36000D6ABF6 /* WeatherListTableViewCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34661220BC36000D6ABF6 /* WeatherListTableViewCoordinator.swift */; };
 		18B34664220BC3BF00D6ABF6 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34663220BC3BF00D6ABF6 /* Coordinator.swift */; };
+		18EEB0C32214A44C00767AF2 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EEB0C22214A44C00767AF2 /* Alamofire.framework */; };
+		18EEB0C42214A45100767AF2 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EEB0AF2214603900767AF2 /* RxCocoa.framework */; };
+		18EEB0C52214A45400767AF2 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18EEB0AC2214603900767AF2 /* RxSwift.framework */; };
+		18EEB0C92214A68D00767AF2 /* Alamofire.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18EEB0C22214A44C00767AF2 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18EEB0CA2214A69400767AF2 /* RxCocoa.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18EEB0AF2214603900767AF2 /* RxCocoa.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		18EEB0CB2214A69B00767AF2 /* RxSwift.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 18EEB0AC2214603900767AF2 /* RxSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -95,6 +101,21 @@
 			remoteInfo = GoodWeather;
 		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		18EEB0C82214A67A00767AF2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				18EEB0CB2214A69B00767AF2 /* RxSwift.framework in CopyFiles */,
+				18EEB0CA2214A69400767AF2 /* RxCocoa.framework in CopyFiles */,
+				18EEB0C92214A68D00767AF2 /* Alamofire.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		1805A335220DD6E600F170C1 /* Auth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Auth.storyboard; sourceTree = "<group>"; };
@@ -173,6 +194,12 @@
 		18B3465E220BC04D00D6ABF6 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
 		18B34661220BC36000D6ABF6 /* WeatherListTableViewCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListTableViewCoordinator.swift; sourceTree = "<group>"; };
 		18B34663220BC3BF00D6ABF6 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		18EEB0AB2214603900767AF2 /* RxAtomic.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxAtomic.framework; path = Carthage/Build/iOS/RxAtomic.framework; sourceTree = "<group>"; };
+		18EEB0AC2214603900767AF2 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		18EEB0AD2214603900767AF2 /* RxBlocking.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxBlocking.framework; path = Carthage/Build/iOS/RxBlocking.framework; sourceTree = "<group>"; };
+		18EEB0AE2214603900767AF2 /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		18EEB0AF2214603900767AF2 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		18EEB0C22214A44C00767AF2 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +207,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18EEB0C32214A44C00767AF2 /* Alamofire.framework in Frameworks */,
+				18EEB0C42214A45100767AF2 /* RxCocoa.framework in Frameworks */,
+				18EEB0C52214A45400767AF2 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +442,7 @@
 				18A8592A220274220033CF39 /* GoodWeatherTests */,
 				18A85935220274220033CF39 /* GoodWeatherUITests */,
 				18A85914220274210033CF39 /* Products */,
+				18EEB0AA2214603900767AF2 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -575,6 +606,7 @@
 		18B34646220B38F900D6ABF6 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
+				18EEB0CC2214B8FC00767AF2 /* Coordinators */,
 				18B34658220B61F500D6ABF6 /* Cells */,
 				18B34653220B5F0800D6ABF6 /* View Models */,
 				18B34650220B3D9700D6ABF6 /* Models */,
@@ -658,6 +690,26 @@
 			path = Coordinators;
 			sourceTree = "<group>";
 		};
+		18EEB0AA2214603900767AF2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				18EEB0C22214A44C00767AF2 /* Alamofire.framework */,
+				18EEB0AB2214603900767AF2 /* RxAtomic.framework */,
+				18EEB0AD2214603900767AF2 /* RxBlocking.framework */,
+				18EEB0AF2214603900767AF2 /* RxCocoa.framework */,
+				18EEB0AC2214603900767AF2 /* RxSwift.framework */,
+				18EEB0AE2214603900767AF2 /* RxTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		18EEB0CC2214B8FC00767AF2 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -668,6 +720,8 @@
 				18A8590F220274210033CF39 /* Sources */,
 				18A85910220274210033CF39 /* Frameworks */,
 				18A85911220274210033CF39 /* Resources */,
+				18EEB0C62214A47200767AF2 /* ShellScript */,
+				18EEB0C82214A67A00767AF2 /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -785,6 +839,29 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18EEB0C62214A47200767AF2 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n/usr/local/bin/carthage copy-frameworks\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		18A8590F220274210033CF39 /* Sources */ = {
@@ -1030,6 +1107,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQVQ6Y77KQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GoodWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1048,6 +1129,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LQVQ6Y77KQ;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = GoodWeather/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

@@ -24,6 +24,17 @@ class NewsCoordinator : Coordinator {
     
     func showNews() {
         let newsOutput = factory.makeNews()
+        
+        newsOutput.onItemSelected = { [ weak self] in
+            self?.showSelectedItem()
+        }
         router.setRootModule(newsOutput)
     }
+    
+    func  showSelectedItem() {
+       
+        print("teste")
+    }
+    
+    
 }

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class WeatherListTableViewController: UITableViewController, WeatherView {
 
     var weather: [Temperature] = [Temperature]()
@@ -16,6 +17,12 @@ class WeatherListTableViewController: UITableViewController, WeatherView {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.navigationController?.navigationBar.barTintColor = UIColor(displayP3Red: 47/255, green: 54/255, blue: 64/255, alpha: 1.0)
+        self.navigationController?.navigationBar.largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+        self.tabBarItem.title = "GoodWeather"
+        
         self.weatherListViewModel = WeatherListViewModel()
         self.weatherListViewModel?.addWeatherViewModel(vm:  WeatherViewModel(name: Dynamic<String>("São Paulo"), main: Weather(temperature:  Dynamic<Double>(100.0), temperatureMin:  Dynamic<Double>(69.0), temperatureMax:  Dynamic<Double>(45.7))))
         tableView.rowHeight = 100
