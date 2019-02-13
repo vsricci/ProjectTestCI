@@ -8,7 +8,7 @@
 
 import UIKit
 
-class NewListTableViewController: UITableViewController {
+class NewListTableViewController: UITableViewController, NewsView {
 
     private var articleListViewModel: ArticleListViewModel!
     override func viewDidLoad() {
@@ -16,6 +16,8 @@ class NewListTableViewController: UITableViewController {
 
         setup()
         getArticles()
+        self.title = "GoodNews"
+        self.navigationController?.navigationItem.title = "GoodNews"
         
     }
     
@@ -25,10 +27,10 @@ class NewListTableViewController: UITableViewController {
         //tableView.estimatedRowHeight = UITableView.automaticDimension
         
         self.navigationController?.navigationBar.prefersLargeTitles = true
-        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 47/255, green: 54/255, blue: 64/255, alpha: 1.0)
-        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        
-        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//        UINavigationBar.appearance().barTintColor = UIColor(displayP3Red: 47/255, green: 54/255, blue: 64/255, alpha: 1.0)
+//        UINavigationBar.appearance().largeTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
+//        
+//        UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
         
     }
 

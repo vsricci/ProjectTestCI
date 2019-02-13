@@ -61,6 +61,9 @@
 		18A8596D2207A2460033CF39 /* WeatherDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8596C2207A2460033CF39 /* WeatherDetailsViewController.swift */; };
 		18A859702207D3000033CF39 /* WeatherDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A8596F2207D3000033CF39 /* WeatherDataSource.swift */; };
 		18A85972220909410033CF39 /* TableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A85971220909410033CF39 /* TableViewDataSource.swift */; };
+		18B338DB2213A48400C7B4E6 /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338DA2213A48400C7B4E6 /* NewsCoordinator.swift */; };
+		18B338DE2213A4D700C7B4E6 /* NewsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338DD2213A4D700C7B4E6 /* NewsModuleFactory.swift */; };
+		18B338E12213A52C00C7B4E6 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338E02213A52C00C7B4E6 /* NewsView.swift */; };
 		18B34643220A688400D6ABF6 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34642220A688400D6ABF6 /* SettingsViewModelTests.swift */; };
 		18B34645220A6C5F00D6ABF6 /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34644220A6C5F00D6ABF6 /* WeatherListViewModelTests.swift */; };
 		18B34649220B395900D6ABF6 /* NewListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34648220B395800D6ABF6 /* NewListTableViewController.swift */; };
@@ -154,6 +157,9 @@
 		18A8596C2207A2460033CF39 /* WeatherDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailsViewController.swift; sourceTree = "<group>"; };
 		18A8596F2207D3000033CF39 /* WeatherDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDataSource.swift; sourceTree = "<group>"; };
 		18A85971220909410033CF39 /* TableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewDataSource.swift; sourceTree = "<group>"; };
+		18B338DA2213A48400C7B4E6 /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
+		18B338DD2213A4D700C7B4E6 /* NewsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModuleFactory.swift; sourceTree = "<group>"; };
+		18B338E02213A52C00C7B4E6 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
 		18B34642220A688400D6ABF6 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 		18B34644220A6C5F00D6ABF6 /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		18B34648220B395800D6ABF6 /* NewListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListTableViewController.swift; sourceTree = "<group>"; };
@@ -233,6 +239,7 @@
 		1805A34B220FB5ED00F170C1 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				18B338DC2213A4BC00C7B4E6 /* News Factory */,
 				1896D0992213559C00C71E8D /* Weather Factory */,
 				1805E0722211B65900803824 /* Auth Module */,
 				1805A34C220FB61100F170C1 /* CoordinatorFactory.swift */,
@@ -264,6 +271,7 @@
 		1805E05D2211A9A700803824 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18B338DF2213A51800C7B4E6 /* News View */,
 				1896D09C2213560A00C71E8D /* Weather View */,
 				1805E0832211C96200803824 /* Navigation View */,
 				1805E07B2211BD9500803824 /* Register View */,
@@ -540,6 +548,30 @@
 			path = "Data Sources";
 			sourceTree = "<group>";
 		};
+		18B338D92213A45A00C7B4E6 /* News Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				18B338DA2213A48400C7B4E6 /* NewsCoordinator.swift */,
+			);
+			path = "News Coordinator";
+			sourceTree = "<group>";
+		};
+		18B338DC2213A4BC00C7B4E6 /* News Factory */ = {
+			isa = PBXGroup;
+			children = (
+				18B338DD2213A4D700C7B4E6 /* NewsModuleFactory.swift */,
+			);
+			path = "News Factory";
+			sourceTree = "<group>";
+		};
+		18B338DF2213A51800C7B4E6 /* News View */ = {
+			isa = PBXGroup;
+			children = (
+				18B338E02213A52C00C7B4E6 /* NewsView.swift */,
+			);
+			path = "News View";
+			sourceTree = "<group>";
+		};
 		18B34646220B38F900D6ABF6 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
@@ -605,6 +637,7 @@
 		18B3465B220BBFD900D6ABF6 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				18B338D92213A45A00C7B4E6 /* News Coordinator */,
 				1896D0962213551E00C71E8D /* WeatherCoordinator */,
 				1805E07C2211BE0E00803824 /* Register coordinator */,
 				1805E06C2211B41C00803824 /* Auth Coordinator */,
@@ -784,6 +817,7 @@
 				1805E06E2211B43700803824 /* AuthCoordinator.swift in Sources */,
 				18B3465A220B620900D6ABF6 /* ArticleTableViewCell.swift in Sources */,
 				18B3464F220B3C9C00D6ABF6 /* GoodNewsWebservice.swift in Sources */,
+				18B338DE2213A4D700C7B4E6 /* NewsModuleFactory.swift in Sources */,
 				184AAA7A220CC9EC00E98A54 /* ViewController.swift in Sources */,
 				1805E0682211B20C00803824 /* NavigationController.swift in Sources */,
 				18A85946220276B30033CF39 /* WeatherListTableViewController.swift in Sources */,
@@ -796,6 +830,7 @@
 				1896D09E2213562400C71E8D /* WeatherView.swift in Sources */,
 				18A8596D2207A2460033CF39 /* WeatherDetailsViewController.swift in Sources */,
 				18B34664220BC3BF00D6ABF6 /* Coordinator.swift in Sources */,
+				18B338E12213A52C00C7B4E6 /* NewsView.swift in Sources */,
 				18A859702207D3000033CF39 /* WeatherDataSource.swift in Sources */,
 				1805E0652211ABB200803824 /* TabbarCoordinator.swift in Sources */,
 				18A85954220346E20033CF39 /* WeatherListViewModel.swift in Sources */,
@@ -811,6 +846,7 @@
 				1805E0852211C98300803824 /* NavigationView.swift in Sources */,
 				1805E0622211AA3300803824 /* TabbarController.swift in Sources */,
 				1805A340220DDF0E00F170C1 /* AppRouter.swift in Sources */,
+				18B338DB2213A48400C7B4E6 /* NewsCoordinator.swift in Sources */,
 				18A8596622077A390033CF39 /* SettingsViewModel.swift in Sources */,
 				1896D095221324B800C71E8D /* RegisterViewModel.swift in Sources */,
 				1805A344220FA64100F170C1 /* BaseView.swift in Sources */,

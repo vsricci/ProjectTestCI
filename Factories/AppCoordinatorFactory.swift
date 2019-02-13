@@ -19,7 +19,7 @@ class AppCordinatorFactory : CoordinatorFactory {
     }
     
     func makeNewsCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let coordinator = WaetherCoordinator(router: router(navigationController), factory: AppModuleFactory())
+        let coordinator = NewsCoordinator(router: router(navigationController), factory: AppModuleFactory())
         return coordinator
     }
     

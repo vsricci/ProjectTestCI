@@ -10,7 +10,7 @@ import Foundation
 
 enum Storyboards: String {
     case main = "Main"
-    case items = "Items"
+    case newList = "ListNews"
     case auth = "Auth"
     case onboarding = "Onboarding"
     case create = "Create"
