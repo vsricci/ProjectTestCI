@@ -9,21 +9,20 @@
 import UIKit
 
 class NewListTableViewController: UITableViewController, NewsView {
-    var onItemSelected: (() -> Void)?
+    var onItemSelected: ((ArticleViewModel) -> Void)?
     
-
     private var articleListViewModel: ArticleListViewModel!
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        setup()
+        
         getArticles()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        
+        setup()
         
     }
     
@@ -75,8 +74,9 @@ class NewListTableViewController: UITableViewController, NewsView {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-        onItemSelected?()
+        let articleSelected = self.articleListViewModel.articleAtIndex(indexPath.row)
+        print(articleSelected.title)
+        onItemSelected?(articleSelected)
     }
 
 }

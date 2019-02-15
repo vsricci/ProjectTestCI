@@ -8,14 +8,19 @@
 
 import Foundation
 
-class NewsCoordinator : Coordinator {
+class NewsCoordinator : Coordinator, DetailsNewsCoordinatorOutput {
+    var isFinished: (() -> Void)?
+    
     
     var factory: NewsModuleFactory
-    var router: Router
     
-    init(router: Router, factory: NewsModuleFactory) {
+    var router: Router
+    var mainCoordinator: CoordinatorFactory
+    
+    init(router: Router, factory: NewsModuleFactory, mainCoordinator: CoordinatorFactory) {
         self.router = router
         self.factory = factory
+        self.mainCoordinator = mainCoordinator
     }
     
     override func start() {
@@ -25,16 +30,24 @@ class NewsCoordinator : Coordinator {
     func showNews() {
         let newsOutput = factory.makeNews()
         
-        newsOutput.onItemSelected = { [ weak self] in
-            self?.showSelectedItem()
+        newsOutput.onItemSelected = { [ weak self] articleSelected in
+            
+            self?.showSelectedItem(article: articleSelected)
         }
+    
+        
+        
         router.setRootModule(newsOutput)
     }
     
-    func  showSelectedItem() {
-       
-        print("teste")
+    
+    func  showSelectedItem(article: ArticleViewModel) {
+    
+        let detailsOutput = factory.makeADetailsNewsView(article: article)
+        router.push(detailsOutput, animated: true, hideBottomBar: true, completion: nil)
     }
+    
+    
     
     
 }
