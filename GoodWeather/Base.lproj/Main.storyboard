@@ -164,6 +164,48 @@
             </objects>
             <point key="canvasLocation" x="-209" y="1098"/>
         </scene>
+        <!--Details News View Controller-->
+        <scene sceneID="bTr-3s-wcL">
+            <objects>
+                <viewController storyboardIdentifier="DetailsNewsViewController" id="oB1-hc-u7a" customClass="DetailsNewsViewController" customModule="GoodWeather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="dDN-0K-h6M">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9OR-SX-HOU">
+                                <rect key="frame" x="16" y="40" width="343" height="27.5"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="23"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cyo-Xa-mit">
+                                <rect key="frame" x="16" y="87.5" width="343" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Cyo-Xa-mit" firstAttribute="top" secondItem="9OR-SX-HOU" secondAttribute="bottom" constant="20" id="F7d-Zv-8HR"/>
+                            <constraint firstItem="Cyo-Xa-mit" firstAttribute="leading" secondItem="k9n-vF-51a" secondAttribute="leading" constant="16" id="T1O-l2-0Kb"/>
+                            <constraint firstItem="9OR-SX-HOU" firstAttribute="top" secondItem="k9n-vF-51a" secondAttribute="top" constant="20" id="a3W-Zf-gCZ"/>
+                            <constraint firstItem="Cyo-Xa-mit" firstAttribute="centerX" secondItem="dDN-0K-h6M" secondAttribute="centerX" id="dhb-UD-FYz"/>
+                            <constraint firstItem="k9n-vF-51a" firstAttribute="trailing" secondItem="Cyo-Xa-mit" secondAttribute="trailing" constant="16" id="feh-sI-cKT"/>
+                            <constraint firstItem="9OR-SX-HOU" firstAttribute="leading" secondItem="k9n-vF-51a" secondAttribute="leading" constant="16" id="ph6-jY-Z0E"/>
+                            <constraint firstItem="k9n-vF-51a" firstAttribute="trailing" secondItem="9OR-SX-HOU" secondAttribute="trailing" constant="16" id="vJu-kq-pMk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="k9n-vF-51a"/>
+                    </view>
+                    <connections>
+                        <outlet property="descriptionLabel" destination="Cyo-Xa-mit" id="BnG-mo-xBD"/>
+                        <outlet property="titleLabel" destination="9OR-SX-HOU" id="QGa-ZP-ZiQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRN-mm-tPf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1020" y="788.45577211394311"/>
+        </scene>
         <!--Weather Details View Controller-->
         <scene sceneID="A0l-bw-mlK">
             <objects>

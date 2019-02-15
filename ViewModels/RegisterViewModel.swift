@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import RxSwift
 
 protocol RegisterViewModelProtocol {
     var profile: Profile? { get set }
@@ -15,6 +16,8 @@ protocol RegisterViewModelProtocol {
 
 class RegisterViewModel {
     var profile: Profile? = Profile()
+    
+    
 }
 
 class Profile: Decodable {

@@ -9,7 +9,13 @@
 import Foundation
 
 class AppModuleFactory : AuthModuleFactory, WeatherModuleFactory, NewsModuleFactory{
+    func makeADetailsNewsView(article: ArticleViewModel) -> DetailsNewView {
+        let item = DetailsNewsViewController.controllerFromStoryboard(.main)
+        item.articleViewModel = article
+        return item
+    }
     
+ 
     func makeNews() -> NewsView {
         return NewListTableViewController.controllerFromStoryboard(.newList)
     }

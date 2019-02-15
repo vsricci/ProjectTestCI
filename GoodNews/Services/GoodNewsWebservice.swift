@@ -19,8 +19,8 @@ class GoodNewsWebservice {
                 case .success:
                     print(response.data)
                     do {
-                        let articleList = try JSONDecoder().decode([Article].self, from: response.data!)
-                        completion(articleList)
+                        let articleList = try JSONDecoder().decode(ArticleList.self, from: response.data!)
+                        completion(articleList.articles)
                     }
                     catch {}
                 

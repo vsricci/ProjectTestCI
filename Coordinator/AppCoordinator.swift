@@ -49,17 +49,13 @@ class AppCoordinator: Coordinator {
     
     private func runTabBarFlow() {
         let (coordinator, module) = coordinatorFactory.makeTabBarCoordinator()
+        
         addDependency(coordinator)
         router.setRootModule(module, hideBar: true)
         coordinator.start()
     }
     
-//    func showItemSelected() {
-//        var coordinator = coordinatorFactory.makeNewsCoordinator()
-//        addDependency(coordinator)
-//        router.present()
-//        coordinator.start()
-//    }
+
     
     
     

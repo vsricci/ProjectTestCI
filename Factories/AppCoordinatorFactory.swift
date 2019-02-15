@@ -9,6 +9,7 @@
 import UIKit
 
 class AppCordinatorFactory : CoordinatorFactory {
+    
     func makeWeatherCoordinator(navigationController: UINavigationController?) -> Coordinator {
         let coordinator = WaetherCoordinator(router: router(navigationController), factory: AppModuleFactory())
         return coordinator
@@ -19,7 +20,7 @@ class AppCordinatorFactory : CoordinatorFactory {
     }
     
     func makeNewsCoordinator(navigationController: UINavigationController?) -> Coordinator {
-        let coordinator = NewsCoordinator(router: router(navigationController), factory: AppModuleFactory())
+        let coordinator = NewsCoordinator(router: router(navigationController), factory: AppModuleFactory(), mainCoordinator: AppCordinatorFactory())
         return coordinator
     }
     

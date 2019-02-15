@@ -10,5 +10,5 @@ import Foundation
 
 protocol NewsModuleFactory {
     func makeNews() -> NewsView
-    
+    func makeADetailsNewsView(article: ArticleViewModel) -> DetailsNewView
 }

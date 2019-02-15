@@ -21,4 +21,6 @@ protocol CoordinatorFactory {
     func makeNewsCoordinator(navigationController: UINavigationController?) -> Coordinator
     func makeNewsCoordinator() -> Coordinator
     
+//    func makeANewTela(router: Router) -> Coordinator & DetailsNewsCoordinatorOutput
+    
 }

@@ -64,6 +64,11 @@
 		18B338DB2213A48400C7B4E6 /* NewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338DA2213A48400C7B4E6 /* NewsCoordinator.swift */; };
 		18B338DE2213A4D700C7B4E6 /* NewsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338DD2213A4D700C7B4E6 /* NewsModuleFactory.swift */; };
 		18B338E12213A52C00C7B4E6 /* NewsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338E02213A52C00C7B4E6 /* NewsView.swift */; };
+		18B338E32214F17800C7B4E6 /* DetailsNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338E22214F17800C7B4E6 /* DetailsNewsViewController.swift */; };
+		18B338E52214F1B700C7B4E6 /* DetailsNewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338E42214F1B700C7B4E6 /* DetailsNewView.swift */; };
+		18B338E92214F2B100C7B4E6 /* DetailsModuleFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338E82214F2B100C7B4E6 /* DetailsModuleFactory.swift */; };
+		18B338EC2214F3C900C7B4E6 /* DetailsNewsCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338EB2214F3C900C7B4E6 /* DetailsNewsCoordinator.swift */; };
+		18B338EE2214F3F800C7B4E6 /* DetailsNewsCoordinatorOutput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B338ED2214F3F800C7B4E6 /* DetailsNewsCoordinatorOutput.swift */; };
 		18B34643220A688400D6ABF6 /* SettingsViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34642220A688400D6ABF6 /* SettingsViewModelTests.swift */; };
 		18B34645220A6C5F00D6ABF6 /* WeatherListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34644220A6C5F00D6ABF6 /* WeatherListViewModelTests.swift */; };
 		18B34649220B395900D6ABF6 /* NewListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B34648220B395800D6ABF6 /* NewListTableViewController.swift */; };
@@ -181,6 +186,11 @@
 		18B338DA2213A48400C7B4E6 /* NewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCoordinator.swift; sourceTree = "<group>"; };
 		18B338DD2213A4D700C7B4E6 /* NewsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModuleFactory.swift; sourceTree = "<group>"; };
 		18B338E02213A52C00C7B4E6 /* NewsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsView.swift; sourceTree = "<group>"; };
+		18B338E22214F17800C7B4E6 /* DetailsNewsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNewsViewController.swift; sourceTree = "<group>"; };
+		18B338E42214F1B700C7B4E6 /* DetailsNewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNewView.swift; sourceTree = "<group>"; };
+		18B338E82214F2B100C7B4E6 /* DetailsModuleFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsModuleFactory.swift; sourceTree = "<group>"; };
+		18B338EB2214F3C900C7B4E6 /* DetailsNewsCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNewsCoordinator.swift; sourceTree = "<group>"; };
+		18B338ED2214F3F800C7B4E6 /* DetailsNewsCoordinatorOutput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsNewsCoordinatorOutput.swift; sourceTree = "<group>"; };
 		18B34642220A688400D6ABF6 /* SettingsViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModelTests.swift; sourceTree = "<group>"; };
 		18B34644220A6C5F00D6ABF6 /* WeatherListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherListViewModelTests.swift; sourceTree = "<group>"; };
 		18B34648220B395800D6ABF6 /* NewListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewListTableViewController.swift; sourceTree = "<group>"; };
@@ -269,6 +279,7 @@
 		1805A34B220FB5ED00F170C1 /* Factories */ = {
 			isa = PBXGroup;
 			children = (
+				18B338E72214F29B00C7B4E6 /* Details Factory */,
 				18B338DC2213A4BC00C7B4E6 /* News Factory */,
 				1896D0992213559C00C71E8D /* Weather Factory */,
 				1805E0722211B65900803824 /* Auth Module */,
@@ -286,6 +297,7 @@
 				1805E05C2211A99500803824 /* Tab Controller */,
 				1805E07F2211C27900803824 /* SignUpViewController.swift */,
 				1805E0812211C28A00803824 /* RegisterViewController.swift */,
+				18B338E22214F17800C7B4E6 /* DetailsNewsViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -301,6 +313,7 @@
 		1805E05D2211A9A700803824 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				18B338E62214F1CD00C7B4E6 /* DetailsNews View */,
 				18B338DF2213A51800C7B4E6 /* News View */,
 				1896D09C2213560A00C71E8D /* Weather View */,
 				1805E0832211C96200803824 /* Navigation View */,
@@ -603,6 +616,31 @@
 			path = "News View";
 			sourceTree = "<group>";
 		};
+		18B338E62214F1CD00C7B4E6 /* DetailsNews View */ = {
+			isa = PBXGroup;
+			children = (
+				18B338E42214F1B700C7B4E6 /* DetailsNewView.swift */,
+			);
+			path = "DetailsNews View";
+			sourceTree = "<group>";
+		};
+		18B338E72214F29B00C7B4E6 /* Details Factory */ = {
+			isa = PBXGroup;
+			children = (
+				18B338E82214F2B100C7B4E6 /* DetailsModuleFactory.swift */,
+			);
+			path = "Details Factory";
+			sourceTree = "<group>";
+		};
+		18B338EA2214F3AD00C7B4E6 /* DetailsNews Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				18B338EB2214F3C900C7B4E6 /* DetailsNewsCoordinator.swift */,
+				18B338ED2214F3F800C7B4E6 /* DetailsNewsCoordinatorOutput.swift */,
+			);
+			path = "DetailsNews Coordinator";
+			sourceTree = "<group>";
+		};
 		18B34646220B38F900D6ABF6 /* GoodNews */ = {
 			isa = PBXGroup;
 			children = (
@@ -669,6 +707,7 @@
 		18B3465B220BBFD900D6ABF6 /* Coordinator */ = {
 			isa = PBXGroup;
 			children = (
+				18B338EA2214F3AD00C7B4E6 /* DetailsNews Coordinator */,
 				18B338D92213A45A00C7B4E6 /* News Coordinator */,
 				1896D0962213551E00C71E8D /* WeatherCoordinator */,
 				1805E07C2211BE0E00803824 /* Register coordinator */,
@@ -881,10 +920,12 @@
 				18B3465F220BC04D00D6ABF6 /* AppCoordinator.swift in Sources */,
 				1805E0762211B78B00803824 /* SignUpView.swift in Sources */,
 				1805A34D220FB61100F170C1 /* CoordinatorFactory.swift in Sources */,
+				18B338E32214F17800C7B4E6 /* DetailsNewsViewController.swift in Sources */,
 				18B34649220B395900D6ABF6 /* NewListTableViewController.swift in Sources */,
 				1805A346220FA76C00F170C1 /* Storyboards.swift in Sources */,
 				18B34662220BC36000D6ABF6 /* WeatherListTableViewCoordinator.swift in Sources */,
 				1805A339220DDB6B00F170C1 /* Router.swift in Sources */,
+				18B338EC2214F3C900C7B4E6 /* DetailsNewsCoordinator.swift in Sources */,
 				1805E0742211B67400803824 /* AuthModuleFactory.swift in Sources */,
 				18A8595922034A8A0033CF39 /* Temperature.swift in Sources */,
 				18A8596B22079CE60033CF39 /* BindingTextField.swift in Sources */,
@@ -894,15 +935,18 @@
 				1805E06E2211B43700803824 /* AuthCoordinator.swift in Sources */,
 				18B3465A220B620900D6ABF6 /* ArticleTableViewCell.swift in Sources */,
 				18B3464F220B3C9C00D6ABF6 /* GoodNewsWebservice.swift in Sources */,
+				18B338E52214F1B700C7B4E6 /* DetailsNewView.swift in Sources */,
 				18B338DE2213A4D700C7B4E6 /* NewsModuleFactory.swift in Sources */,
 				184AAA7A220CC9EC00E98A54 /* ViewController.swift in Sources */,
 				1805E0682211B20C00803824 /* NavigationController.swift in Sources */,
 				18A85946220276B30033CF39 /* WeatherListTableViewController.swift in Sources */,
 				1896D0982213553A00C71E8D /* WeatherCoordinator.swift in Sources */,
+				18B338E92214F2B100C7B4E6 /* DetailsModuleFactory.swift in Sources */,
 				1805A348220FA8F700F170C1 /* NSObject+Extensions.swift in Sources */,
 				18A85948220276E30033CF39 /* AddWeatherCityViewController.swift in Sources */,
 				1805A34F220FB95F00F170C1 /* AuthCoordinatorOutput.swift in Sources */,
 				18A8595B220360090033CF39 /* TemperatureViewModel.swift in Sources */,
+				18B338EE2214F3F800C7B4E6 /* DetailsNewsCoordinatorOutput.swift in Sources */,
 				1805E0872211F69F00803824 /* UINavigationController+Extensions.swift in Sources */,
 				1896D09E2213562400C71E8D /* WeatherView.swift in Sources */,
 				18A8596D2207A2460033CF39 /* WeatherDetailsViewController.swift in Sources */,
